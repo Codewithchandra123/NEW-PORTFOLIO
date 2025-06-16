@@ -1,0 +1,417 @@
+/* mediaquery.css */
+
+/* Mobile styles */
+@media screen and (max-width: 900px) {
+  .slidbar{
+    height: 45vh;
+  }
+  #hionly{
+    padding-top: 11%;
+  }
+  #hionly2{
+    padding-top: 11%;
+  }
+   
+  .buttons{
+    color: white;
+    
+  }
+  nav {
+    position: relative;
+    background-color: #16687a;
+    /* position: fixed; */
+    /* z-index: 2; */
+    width: 100vw;
+  }
+  main{
+    height: 100vh;
+  }
+  .sign{
+    margin-top: 24px;
+    margin-left: -80px;
+  }
+
+  #chandra {
+    /* top: 0; */
+    position: absolute;
+   left: 25%;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  li {
+    /* padding: 10px; */
+    font-size: 18px;
+    text-align: center;
+  }
+  ul {
+   display: none;
+  }
+
+  .box {
+    flex-direction: column-reverse;
+    align-items: center;
+    overflow: hidden;
+    height: auto;
+  }
+  .profil3{
+    flex-direction: column-reverse;
+    padding: 20px;
+  }
+  .profil3 h2{
+   
+    width: 79%;
+    left: 7%;
+    /* top: 75%; */
+    position: sticky;
+    font-size: 25px;
+  }
+
+  .profil3 img {
+    width: 80%;
+    height: 62%;
+    position: relative;
+    left: 0%;
+    background-color: #0c2d36;;
+    /* border-radius: 5%; */
+    margin: auto;
+  }
+  .contaner1 {
+    padding-left: 8vw;
+    /* height: 50vh; */
+  }
+  #name {
+    font-size: 29px;
+    margin: 5px;
+  }
+  
+  #hello {
+    font-size: 73px;
+    margin: 5px;
+  }
+  header{
+    width: 100vw;
+  }
+
+  #spam1 {
+    font-size: 18px;
+    margin: 5px;
+  }
+
+  #para {
+    font-size: 30px;
+  }
+  .extani {
+    color: white;
+    font-family: tahoma;
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 1.5;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+
+    /* width: 100vw; */
+  }
+  .word1,
+  .word2,
+  .word3 {
+    font-family: tahoma;
+    margin-top: 0px;
+    font-weight: 800;
+  }
+  .extani span {
+    margin-left: 0px;
+    padding-left: 0px;
+    overflow: scroll;
+  }
+  .buttons {
+    /* margin: 10px; */
+    margin-left: 13vw;
+  }
+ 
+   .aboutbox p {
+    font-size: 19px;
+   
+    /* width: fit-content; */
+
+   padding: 10px;
+  }  
+    .about-para {
+    /* width: 100vw; */
+    margin: -30%;
+    text-align:justify;
+    /* overflow: auto; */
+  }  
+   .about-para p {
+   
+    margin: 3px;
+  }  
+  .pmedia{
+   
+      height: 9.6%;
+  
+    
+  }
+   .aboutbox {
+    display: flex;
+   
+    flex-direction: column;
+     padding: 0px 74px; 
+    background-color: white;
+    height: 60vh;
+    overflow: auto;
+    width: unset;
+  } 
+  
+  
+  #paraimg {
+    position: static;
+    padding: 20% 11%;
+   
+    width: 66%;
+    margin-bottom: 17%;
+    margin-top: -9%;
+   
+  } 
+
+  
+
+ 
+
+  form {
+    margin: 30px;
+    height: 60%;
+  }
+  #paraname {
+    font-weight: 500;
+  }
+
+  .card {
+    /* flex-direction: column; */
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: auto;
+  }
+
+  .box1 {
+    width: 50%;
+    margin: 10px;
+    height: 50%;
+  }
+  .footer1 {
+    height: 500px;
+  }
+  .message {
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    width: 190px;
+    z-index: 1;
+    display: block;
+    font-weight: 300;
+    position: absolute;
+    padding-left: 1.5rem;
+    top: 0.9rem;
+    left: 200px;
+    animation-delay: 2s;
+    animation: openclose 5s ease-in-out infinite;
+  }
+
+  /* Adjust the animation keyframes for mobile devices */
+  @keyframes openclose {
+    98% {
+      top: -16rem;
+      width: 0;
+      text-indent: 10px;
+    }
+    100% {
+      top: 0;
+      width: 0;
+      text-indent: 0;
+    }
+  }
+
+
+  .projectcard{
+    
+  width: 83vw;
+  height: 60vh;
+  border: rgb(255, 255, 255) 1px solid;
+  margin: 50px;
+  
+  overflow: hidden;
+  background-color: #084451;
+ 
+  }
+  .textp2{
+    font-size: 13px;
+    padding: 1px;
+  }
+
+  #navflex {
+    position: relative;
+    height: 67px;
+    justify-content: end;
+  }
+  #logo{
+    margin: inherit;
+    width: fit-content;
+    height: 94%;
+  }
+  #chandra {
+    height: 100%;
+    
+  }
+  .exp {
+    flex-direction: column-reverse;
+  }
+  #blues{
+    margin-left: 22%;
+  }
+  .slid-box1 img{
+    padding-left: 10%;
+  }
+  .slid-box1{
+    gap: 10%;
+  }
+}
+
+/* Desktop  portfolio name  mobile view */
+@media (max-width: 700px) {
+  .sign {
+    width: 95vw;
+    min-width: 0;
+    height: auto;
+    font-size: 1.5rem;
+    left: 0;
+    top: 20px;
+    position: relative;
+    transform: none;
+    white-space: normal;
+    padding: 0 10px;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 0;
+    overflow: visible;
+  }
+}
+/* Desktop styles portfolio name   ending */
+
+/*  Desktop styles for conatct page  */
+
+@media (max-width: 700px) {
+  .footer1 {
+    width: 100vw;
+    height: 260px; /* Reduce height for mobile */
+    background-size: cover; /* Cover ensures full area is filled */
+    background-position: center center; /* Center the image */
+    background-repeat: no-repeat;
+    padding-top: 0;
+    margin: 16px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+  }
+}
+/*  Desktop styles for conatct page ending  */
+
+/*for starting  educational section */
+@media (max-width: 700px) {
+  .edu-img {
+    width: 55vw;
+    max-width: 150px;
+    height: auto;
+    margin: 0 auto 12px auto;
+    display: block;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 16px rgba(31, 38, 135, 0.18);
+    transition: box-shadow 0.4s, opacity 0.4s, background 0.4s;
+    background: transparent;
+    opacity: 0.85;
+  }
+  .edu-img:hover,
+  .edu-img:active,
+  .edu-img.touch-active {
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.35), 0 0 24px 8px #16687a;
+    background: rgba(22, 104, 122, 0.18); /* blue fade effect */
+    opacity: 1;
+    transition: box-shadow 0.4s, opacity 0.4s, background 0.4s;
+  }
+}
+
+/* hired me section mobile view responsive  */
+@media (max-width: 700px) {
+  #insta {
+    width: 70vw;
+    max-width: 180px;
+    height: auto;
+    border-radius: 14px;
+    font-size: 1rem;
+    display: block;
+    margin: 10px auto 6px auto;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(31,38,135,0.10);
+    background: #fff; /* or transparent if you prefer */
+    padding: 6px 0;
+    text-align: center;
+    overflow: hidden;
+  }
+}
+
+/* it is for abot content  */
+@media (max-width: 700px) {
+  .aboutbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    gap: 16px;
+    background: rgba(255, 255, 255, 0.13);
+    color: #222;
+    backdrop-filter: blur(6px);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    height: auto;
+    width: 94vw;
+    margin: 0 auto;
+  }
+
+  .about-img-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+
+  #paraimg {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 4px solid #f4f5f1;
+    box-shadow: 0 6px 24px rgba(94, 54, 254, 0.3);
+    background-color: #fff;
+    display: block;
+  }
+
+  .about-para {
+    width: 100%;
+    padding: 14px;
+    background: rgba(255, 255, 255, 0.13);
+    border-radius: 12px;
+    color: #222;
+    font-size: 1rem;
+    text-align: justify;
+    line-height: 1.6;
+    box-sizing: border-box;
+  }
+}
