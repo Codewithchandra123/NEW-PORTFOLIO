@@ -110,3 +110,198 @@ img {
 [data-aos].aos-animate {
   opacity: 1;
 }
+
+
+
+
+
+.resume-section {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 29px 4px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.08);
+}
+.resume-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #e2f327;
+  margin-bottom: 32px;
+  letter-spacing: -1px;
+}
+.resume-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+.resume-card {
+  background: #18181b;
+  color: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(30,41,59,0.06);
+  padding: 0;
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  min-height: 250px;
+  max-height: 400px;
+}
+.resume-card-header {
+  width: 100%;
+  background: #23232b;
+  border: none;
+  outline: none;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #e2f327;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  border-bottom: 1px solid #333;
+  gap: 10px;
+}
+.expand-hint {
+  font-size: 0.95rem;
+  color: #38bdf8;
+  margin-left: 12px;
+  opacity: 0.85;
+  transition: opacity 0.3s;
+}
+.toggle-icon {
+  font-size: 1.2rem;
+  margin-left: auto;
+  transition: transform 0.4s cubic-bezier(0.4,0,0.2,1);
+}
+.pulse {
+  animation: pulse-glow 1.2s infinite;
+}
+@keyframes pulse-glow {
+  0% { text-shadow: 0 0 0 #e2f327; }
+  50% { text-shadow: 0 0 8px #e2f327, 0 0 16px #38bdf8; }
+  100% { text-shadow: 0 0 0 #e2f327; }
+}
+.resume-card-content {
+  padding: 0 20px;
+  background: #23232b;
+  color: #fff;
+  overflow-y: auto;
+  max-height: 0;
+  transition: max-height 0.5s cubic-bezier(0.4,0,0.2,1);
+}
+.resume-item {
+  margin: 18px 0;
+}
+.resume-item-title {
+  font-weight: 600;
+  color: #e2f327;
+  font-size: 1.08rem;
+}
+.resume-item-subtitle {
+  color: #a1a1aa;
+  font-size: 0.98rem;
+}
+.resume-item-meta {
+  color: #38bdf8;
+  font-size: 0.92rem;
+  margin-bottom: 4px;
+}
+.resume-item-desc {
+  color: #f3f4f6;
+  font-size: 0.95rem;
+  margin-top: 2px;
+}
+.resume-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 18px 0;
+}
+.badge {
+  background: #23232b;
+  color: #e2f327;
+  padding: 6px 14px 6px 8px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border: 1px solid #333;
+  transition: background 0.2s, color 0.2s;
+}
+.badge:hover {
+  background: #e2f327;
+  color: #23232b;
+}
+.heroicon {
+  width: 1.2em;
+  height: 1.2em;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+.resume-list.achievements-list {
+  color: #e2f327;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin: 18px 0;
+  display: block !important;
+}
+.no-achievements {
+  color: #38bdf8;
+  text-align: center;
+  padding: 18px 0;
+  font-size: 1rem;
+}
+.resume-card-content::-webkit-scrollbar {
+  width: 8px;
+  background: #23232b;
+}
+.resume-card-content::-webkit-scrollbar-thumb {
+  background: #e2f327;
+  border-radius: 8px;
+}
+@media (max-width: 900px) {
+  .resume-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .resume-card {
+    min-height: 200px;
+    max-height: none;
+  }
+  .resume-list.achievements-list {
+    display: block !important;
+  }
+}
+@media (max-width: 600px) {
+  .resume-section {
+    padding: 18px 4px;
+  }
+  .resume-title {
+    font-size: 2rem;
+  }
+  .resume-card-header {
+    font-size: 1rem;
+    padding: 12px 12px;
+  }
+  .resume-card {
+    max-height: none;
+  }
+  .resume-card-content {
+    max-height: 0;
+    overflow-y: hidden;
+    padding-top: 0 ;
+    padding-bottom: 0;
+  }
+  .resume-list.achievements-list {
+    display: block !important;
+  }
+}
+
+ 

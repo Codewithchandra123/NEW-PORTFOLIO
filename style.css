@@ -259,7 +259,7 @@ header {
 /* ...existing code... */
  
 
-
+/* About Section */
 .About {
   text-align: center;
   font-size: 40px;
@@ -272,7 +272,7 @@ header {
 /* Glow Animation */
 @keyframes blink-blue {
   0%, 100% {
-    box-shadow: 0 0 0 rgba(0, 123, 255, 0);
+    box-shadow: 0 0 0 rgba(0, 123, 255, 0) !important;
   }
   50% {
     box-shadow: 0 0 20px 10px rgba(0, 123, 255, 0.4);
@@ -290,10 +290,10 @@ header {
   max-width: 1400px;
   gap: 40px;
   border-radius: 16px;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.08) !important;
   backdrop-filter: blur(12px);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-  color: #f1f5f9;
+  color: #f1f5f9 !important;
   overflow: hidden;
   width: 95%;
   box-sizing: border-box;
@@ -306,11 +306,10 @@ header {
   min-width: 160px;
   overflow: hidden;
   animation: blink-blue 3s infinite;
-  /* Remove circular shape */
 }
 .paraimg {
   width: 100%;
-  border-radius: 14px; /* Keep image corners slightly rounded */
+  border-radius: 14px;
   object-fit: cover;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
   position: relative;
@@ -324,9 +323,25 @@ header {
   overflow-y: auto;
   max-height: 700px;
   padding-right: 10px;
-  color: #f8fafc;
+  color: #f8fafc !important;
   word-wrap: break-word;
+  margin: 0; /* Ensure no negative margin */
 }
+/* Base styling for paragraph spacing */
+.about-para p {
+  margin-bottom: 16px; /* Default spacing for desktop */
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Tighter spacing for mobile */
+@media screen and (max-width: 900px) {
+  .about-para p {
+    margin-bottom: 10px;  /* Adjust this as needed */
+    padding: 0;
+  }
+}
+
 
 /* Scroll Animation */
 .scroll-fade-in {
@@ -345,9 +360,9 @@ header {
     flex-direction: column;
     padding: 30px 20px;
     gap: 24px;
-    background: rgba(255, 255, 255, 0.08); /* Ensures glass look */
+    background: rgba(255, 255, 255, 0.08) !important;
     backdrop-filter: blur(14px);
-    color: #f1f5f9; /* Enforce light text */
+    color: #f1f5f9 !important;
   }
 
   .about-img-container {
@@ -362,12 +377,13 @@ header {
     overflow-y: visible;
     font-size: 16px;
     padding-right: 0;
-    color: #f1f5f9; /* Reinforce white text */
+    color: #f1f5f9 !important;
+    margin: 0 !important; /* Remove any margin on tablet */
   }
 
   .about-heading {
     font-size: 30px;
-    color: #e2e8f0;
+    color: #e2e8f0 !important;
   }
 }
 
@@ -380,7 +396,7 @@ header {
     width: 100%;
     background: rgba(255, 255, 255, 0.12);
     backdrop-filter: blur(16px);
-    color: #f8fafc;
+    color: #f8fafc !important;
   }
 
   .about-img-container {
@@ -398,21 +414,18 @@ header {
   .about-para {
     font-size: 15px;
     line-height: 1.6;
-    color: #f1f5f9;
+    color: #f1f5f9 !important;
+    margin: 0 !important; /* Remove any margin on mobile */
+    padding-right: 0;
+    max-height: unset;
+    overflow-y: visible;
   }
 
   .about-heading {
     font-size: 26px;
-    color: #ffffff;
+    color: #ffffff !important;
   }
 }
-
-
-
-
-
-
-
 
 
 

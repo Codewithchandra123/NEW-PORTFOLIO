@@ -265,3 +265,50 @@ document.addEventListener("DOMContentLoaded", function() {
                 glow.style.animation = `pulse 8s infinite ease-in-out ${index * 2}s`;
             });
         });
+
+
+        
+// Function to toggle sections in the resume
+
+function toggleSection(section) {
+  const content = document.getElementById(section + '-content');
+  const icon = document.getElementById(section + '-icon');
+  const hint = document.getElementById(section + '-hint');
+  // For achievements, check if list is empty
+  if (section === 'achieve') {
+    const list = document.getElementById('achieve-list');
+    const noAch = document.getElementById('no-achievements');
+    if (list && list.children.length === 0) {
+      noAch.style.display = "block";
+    } else {
+      noAch.style.display = "none";
+    }
+  }
+  if (content.style.maxHeight && content.style.maxHeight !== "0px") {
+    content.style.maxHeight = "0px";
+    icon.textContent = "▼";
+    icon.classList.add('pulse');
+    icon.style.transform = "rotate(0deg)";
+    if (hint) hint.style.display = "inline";
+  } else {
+    content.style.maxHeight = content.scrollHeight + "px";
+    icon.textContent = "▲";
+    icon.classList.remove('pulse');
+    icon.style.transform = "rotate(180deg)";
+    if (hint) hint.style.display = "none";
+  }
+}
+
+window.onload = function() {
+  ['edu', 'exp', 'skills', 'achieve'].forEach(section => {
+    const content = document.getElementById(section + '-content');
+    content.style.maxHeight = "0px";
+    content.style.overflowY = "auto";
+    const icon = document.getElementById(section + '-icon');
+    icon.textContent = "▼";
+    icon.classList.add('pulse');
+    icon.style.transform = "rotate(0deg)";
+    const hint = document.getElementById(section + '-hint');
+    if (hint) hint.style.display = "inline";
+  });
+};
