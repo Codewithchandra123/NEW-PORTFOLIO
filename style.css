@@ -493,6 +493,16 @@ header {
   overflow: hidden;
   padding-top:0px;
  }
+ #contact-form input[type="submit"] {
+  background: #04caf6;
+  color: #fff;
+  border: none;
+  transition: background 0.2s;
+}
+
+#contact-form input[type="submit"]:hover {
+  background: #2563eb;
+}
 
 form {
   align-self: center;
@@ -936,7 +946,7 @@ footer p {
   .slid-box1 {
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 30px !important;
     height: auto;
     overflow-y: visible;
   }
